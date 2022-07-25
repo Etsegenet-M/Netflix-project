@@ -1,0 +1,38 @@
+.row {
+  margin-left: 20px;
+  color: white;
+}
+.row__poster {
+  width: 100%;
+  object-fit: contain;
+  max-height: 100px;
+  transition: transform 450ms;
+  /* when hovered it will comeout slowly */
+  margin-right: 10px;
+}
+.row__posters {
+  display: flex;
+  overflow-y: hidden;
+  overflow-x: scroll; 
+  /* so each row scrolls */
+  padding: 20px;
+}
+.row__posters::-webkit-scrollbar {
+  display: none;
+  /* to eliminate the scroll sign */
+}
+.row__poster:hover {
+  transform: scale(1.08);
+  /* when hover weta weta endil */
+  /* opacity: 1.2; */
+}
+.row__posterLarge {
+  max-height: 250px;
+}
+.row__posterLarge:hover {
+  transform: scale(1.09);
+  opacity: 1;
+}
+
+
+
